@@ -1,0 +1,862 @@
+from_label,to_label,sum_sigval
+Activated CD4+ T-cells,Activated CD4+ T-cells,0.431034483
+Activated CD4+ T-cells,Activated monocytes,0.155172414
+Activated CD4+ T-cells,B cells,0.310344828
+Activated CD4+ T-cells,CD11b+ M1 macrophages,0.017241379
+Activated CD4+ T-cells,CD11b+ M2 macrophages,0
+Activated CD4+ T-cells,CD16+ CD4+ T-cells,-0.017241379
+Activated CD4+ T-cells,CD16+ M1 macrophages,0
+Activated CD4+ T-cells,CD16+ M2 macrophages,-0.068965517
+Activated CD4+ T-cells,CD3+ CD4+ T-cells,0.482758621
+Activated CD4+ T-cells,CD3+ CD8+ T-cells,0.482758621
+Activated CD4+ T-cells,Cholangiocytes,0.051724138
+Activated CD4+ T-cells,Classical monocytes,0.086206897
+Activated CD4+ T-cells,Cytotoxic T-cells,0.034482759
+Activated CD4+ T-cells,Endothelial cells,-0.017241379
+Activated CD4+ T-cells,HLADR+ CD4+ Tregs,0.120689655
+Activated CD4+ T-cells,HLADR+ M2 macrophages,0.172413793
+Activated CD4+ T-cells,HLADR- CD4+ Tregs,0
+Activated CD4+ T-cells,HLADR-high Cholangiocytes,0.068965517
+Activated CD4+ T-cells,HLADR-high Endothelial cells,0.137931034
+Activated CD4+ T-cells,HLADR-high Hepatocytes,0.344827586
+Activated CD4+ T-cells,Hepatocytes,-0.689655172
+Activated CD4+ T-cells,Intermediate monocytes,0
+Activated CD4+ T-cells,Ki67-high Cholangiocytes,0
+Activated CD4+ T-cells,Ki67-high Endothelial cells,0.017241379
+Activated CD4+ T-cells,Ki67-high Hepatocytes,0
+Activated CD4+ T-cells,M1 macrophages,0.172413793
+Activated CD4+ T-cells,M2 macrophages,0.034482759
+Activated CD4+ T-cells,Naive CD4+ T-cells,0.224137931
+Activated CD4+ T-cells,Neutrophils,-0.120689655
+Activated CD4+ T-cells,Non-classical monocytes,0
+Activated CD4+ T-cells,PD1+ B cells,0.120689655
+Activated CD4+ T-cells,PD1+ CD4+ T-cells,0.137931034
+Activated CD4+ T-cells,PD1+ CD8+ T-cells,0.120689655
+Activated CD4+ T-cells,PD1+CD28+ CD8+ T-cells,0.155172414
+Activated CD4+ T-cells,Plasma cells,0
+Activated CD4+ T-cells,Proliferating B cells,0.068965517
+Activated CD4+ T-cells,Proliferating CD4+ T-cells,0.051724138
+Activated CD4+ T-cells,Proliferating CD8+ T-cells,0.155172414
+Activated CD4+ T-cells,Proliferating M1 macrophages,0.017241379
+Activated CD4+ T-cells,Proliferating M2 macrophages,0
+Activated CD4+ T-cells,Resident memory CD4+ T-cells,-0.120689655
+Activated monocytes,Activated monocytes,0.224137931
+Activated monocytes,B cells,0.034482759
+Activated monocytes,CD11b+ M1 macrophages,0
+Activated monocytes,CD11b+ M2 macrophages,0
+Activated monocytes,CD16+ CD4+ T-cells,0
+Activated monocytes,CD16+ M1 macrophages,0
+Activated monocytes,CD16+ M2 macrophages,-0.068965517
+Activated monocytes,CD3+ CD4+ T-cells,0.103448276
+Activated monocytes,CD3+ CD8+ T-cells,0.189655172
+Activated monocytes,Cholangiocytes,0.120689655
+Activated monocytes,Classical monocytes,0.448275862
+Activated monocytes,Cytotoxic T-cells,0.017241379
+Activated monocytes,Endothelial cells,0.017241379
+Activated monocytes,HLADR+ CD4+ Tregs,0.068965517
+Activated monocytes,HLADR+ M2 macrophages,0.051724138
+Activated monocytes,HLADR- CD4+ Tregs,0
+Activated monocytes,HLADR-high Cholangiocytes,0.068965517
+Activated monocytes,HLADR-high Endothelial cells,0.068965517
+Activated monocytes,HLADR-high Hepatocytes,0.224137931
+Activated monocytes,Hepatocytes,-0.517241379
+Activated monocytes,Intermediate monocytes,0
+Activated monocytes,Ki67-high Cholangiocytes,0.017241379
+Activated monocytes,Ki67-high Endothelial cells,0.017241379
+Activated monocytes,Ki67-high Hepatocytes,0.017241379
+Activated monocytes,M1 macrophages,0.051724138
+Activated monocytes,M2 macrophages,0
+Activated monocytes,Naive CD4+ T-cells,0
+Activated monocytes,Neutrophils,-0.103448276
+Activated monocytes,Non-classical monocytes,0.086206897
+Activated monocytes,PD1+ B cells,0.017241379
+Activated monocytes,PD1+ CD4+ T-cells,0.017241379
+Activated monocytes,PD1+ CD8+ T-cells,0.034482759
+Activated monocytes,PD1+CD28+ CD8+ T-cells,0.017241379
+Activated monocytes,Plasma cells,0.017241379
+Activated monocytes,Proliferating B cells,0
+Activated monocytes,Proliferating CD4+ T-cells,0.034482759
+Activated monocytes,Proliferating CD8+ T-cells,0.103448276
+Activated monocytes,Proliferating M1 macrophages,0.017241379
+Activated monocytes,Proliferating M2 macrophages,0
+Activated monocytes,Resident memory CD4+ T-cells,-0.017241379
+B cells,B cells,0.689655172
+B cells,CD11b+ M1 macrophages,0
+B cells,CD11b+ M2 macrophages,0.034482759
+B cells,CD16+ CD4+ T-cells,-0.051724138
+B cells,CD16+ M1 macrophages,-0.051724138
+B cells,CD16+ M2 macrophages,-0.24137931
+B cells,CD3+ CD4+ T-cells,0.5
+B cells,CD3+ CD8+ T-cells,0.534482759
+B cells,Cholangiocytes,-0.137931034
+B cells,Classical monocytes,0.086206897
+B cells,Cytotoxic T-cells,0.017241379
+B cells,Endothelial cells,0
+B cells,HLADR+ CD4+ Tregs,0.189655172
+B cells,HLADR+ M2 macrophages,0.034482759
+B cells,HLADR- CD4+ Tregs,0.034482759
+B cells,HLADR-high Cholangiocytes,0.034482759
+B cells,HLADR-high Endothelial cells,0.068965517
+B cells,HLADR-high Hepatocytes,0.568965517
+B cells,Hepatocytes,-0.74137931
+B cells,Intermediate monocytes,-0.017241379
+B cells,Ki67-high Cholangiocytes,0
+B cells,Ki67-high Endothelial cells,0.017241379
+B cells,Ki67-high Hepatocytes,0.017241379
+B cells,M1 macrophages,-0.086206897
+B cells,M2 macrophages,0.017241379
+B cells,Naive CD4+ T-cells,0.206896552
+B cells,Neutrophils,-0.293103448
+B cells,Non-classical monocytes,-0.017241379
+B cells,PD1+ B cells,0.396551724
+B cells,PD1+ CD4+ T-cells,0.137931034
+B cells,PD1+ CD8+ T-cells,0.206896552
+B cells,PD1+CD28+ CD8+ T-cells,0.413793103
+B cells,Plasma cells,-0.120689655
+B cells,Proliferating B cells,0.275862069
+B cells,Proliferating CD4+ T-cells,0.051724138
+B cells,Proliferating CD8+ T-cells,0.172413793
+B cells,Proliferating M1 macrophages,-0.017241379
+B cells,Proliferating M2 macrophages,-0.034482759
+B cells,Resident memory CD4+ T-cells,-0.224137931
+CD11b+ M1 macrophages,CD11b+ M1 macrophages,0.051724138
+CD11b+ M1 macrophages,CD11b+ M2 macrophages,0.051724138
+CD11b+ M1 macrophages,CD16+ CD4+ T-cells,0
+CD11b+ M1 macrophages,CD16+ M1 macrophages,0
+CD11b+ M1 macrophages,CD16+ M2 macrophages,-0.017241379
+CD11b+ M1 macrophages,CD3+ CD4+ T-cells,0.068965517
+CD11b+ M1 macrophages,CD3+ CD8+ T-cells,0.086206897
+CD11b+ M1 macrophages,Cholangiocytes,0.068965517
+CD11b+ M1 macrophages,Classical monocytes,0.103448276
+CD11b+ M1 macrophages,Cytotoxic T-cells,0
+CD11b+ M1 macrophages,Endothelial cells,0.017241379
+CD11b+ M1 macrophages,HLADR+ CD4+ Tregs,0
+CD11b+ M1 macrophages,HLADR+ M2 macrophages,0.017241379
+CD11b+ M1 macrophages,HLADR- CD4+ Tregs,0
+CD11b+ M1 macrophages,HLADR-high Cholangiocytes,0.017241379
+CD11b+ M1 macrophages,HLADR-high Endothelial cells,0
+CD11b+ M1 macrophages,HLADR-high Hepatocytes,0.034482759
+CD11b+ M1 macrophages,Hepatocytes,-0.275862069
+CD11b+ M1 macrophages,Intermediate monocytes,0
+CD11b+ M1 macrophages,Ki67-high Cholangiocytes,0
+CD11b+ M1 macrophages,Ki67-high Endothelial cells,0
+CD11b+ M1 macrophages,Ki67-high Hepatocytes,0
+CD11b+ M1 macrophages,M1 macrophages,0.155172414
+CD11b+ M1 macrophages,M2 macrophages,0.034482759
+CD11b+ M1 macrophages,Naive CD4+ T-cells,0
+CD11b+ M1 macrophages,Neutrophils,-0.034482759
+CD11b+ M1 macrophages,Non-classical monocytes,0
+CD11b+ M1 macrophages,PD1+ B cells,0
+CD11b+ M1 macrophages,PD1+ CD4+ T-cells,0
+CD11b+ M1 macrophages,PD1+ CD8+ T-cells,0
+CD11b+ M1 macrophages,PD1+CD28+ CD8+ T-cells,0
+CD11b+ M1 macrophages,Plasma cells,-0.017241379
+CD11b+ M1 macrophages,Proliferating B cells,0
+CD11b+ M1 macrophages,Proliferating CD4+ T-cells,0
+CD11b+ M1 macrophages,Proliferating CD8+ T-cells,0.034482759
+CD11b+ M1 macrophages,Proliferating M1 macrophages,0.034482759
+CD11b+ M1 macrophages,Proliferating M2 macrophages,0
+CD11b+ M1 macrophages,Resident memory CD4+ T-cells,0
+CD11b+ M2 macrophages,CD11b+ M2 macrophages,0.034482759
+CD11b+ M2 macrophages,CD16+ CD4+ T-cells,0
+CD11b+ M2 macrophages,CD16+ M1 macrophages,0
+CD11b+ M2 macrophages,CD16+ M2 macrophages,-0.017241379
+CD11b+ M2 macrophages,CD3+ CD4+ T-cells,0.017241379
+CD11b+ M2 macrophages,CD3+ CD8+ T-cells,0.034482759
+CD11b+ M2 macrophages,Cholangiocytes,0
+CD11b+ M2 macrophages,Classical monocytes,0.068965517
+CD11b+ M2 macrophages,Cytotoxic T-cells,0
+CD11b+ M2 macrophages,Endothelial cells,0
+CD11b+ M2 macrophages,HLADR+ CD4+ Tregs,0
+CD11b+ M2 macrophages,HLADR+ M2 macrophages,0.051724138
+CD11b+ M2 macrophages,HLADR- CD4+ Tregs,0
+CD11b+ M2 macrophages,HLADR-high Cholangiocytes,0.017241379
+CD11b+ M2 macrophages,HLADR-high Endothelial cells,0
+CD11b+ M2 macrophages,HLADR-high Hepatocytes,0.051724138
+CD11b+ M2 macrophages,Hepatocytes,-0.155172414
+CD11b+ M2 macrophages,Intermediate monocytes,0
+CD11b+ M2 macrophages,Ki67-high Cholangiocytes,0
+CD11b+ M2 macrophages,Ki67-high Endothelial cells,0.017241379
+CD11b+ M2 macrophages,Ki67-high Hepatocytes,0.017241379
+CD11b+ M2 macrophages,M1 macrophages,0.017241379
+CD11b+ M2 macrophages,M2 macrophages,0.034482759
+CD11b+ M2 macrophages,Naive CD4+ T-cells,0
+CD11b+ M2 macrophages,Neutrophils,0
+CD11b+ M2 macrophages,Non-classical monocytes,0
+CD11b+ M2 macrophages,PD1+ B cells,0
+CD11b+ M2 macrophages,PD1+ CD4+ T-cells,0
+CD11b+ M2 macrophages,PD1+ CD8+ T-cells,0
+CD11b+ M2 macrophages,PD1+CD28+ CD8+ T-cells,0
+CD11b+ M2 macrophages,Plasma cells,0
+CD11b+ M2 macrophages,Proliferating B cells,0
+CD11b+ M2 macrophages,Proliferating CD4+ T-cells,0
+CD11b+ M2 macrophages,Proliferating CD8+ T-cells,0.034482759
+CD11b+ M2 macrophages,Proliferating M1 macrophages,0
+CD11b+ M2 macrophages,Proliferating M2 macrophages,0
+CD11b+ M2 macrophages,Resident memory CD4+ T-cells,0
+CD16+ CD4+ T-cells,CD16+ CD4+ T-cells,0.120689655
+CD16+ CD4+ T-cells,CD16+ M1 macrophages,0.017241379
+CD16+ CD4+ T-cells,CD16+ M2 macrophages,0.034482759
+CD16+ CD4+ T-cells,CD3+ CD4+ T-cells,-0.017241379
+CD16+ CD4+ T-cells,CD3+ CD8+ T-cells,-0.137931034
+CD16+ CD4+ T-cells,Cholangiocytes,-0.068965517
+CD16+ CD4+ T-cells,Classical monocytes,0
+CD16+ CD4+ T-cells,Cytotoxic T-cells,0
+CD16+ CD4+ T-cells,Endothelial cells,-0.103448276
+CD16+ CD4+ T-cells,HLADR+ CD4+ Tregs,0
+CD16+ CD4+ T-cells,HLADR+ M2 macrophages,-0.034482759
+CD16+ CD4+ T-cells,HLADR- CD4+ Tregs,0
+CD16+ CD4+ T-cells,HLADR-high Cholangiocytes,0
+CD16+ CD4+ T-cells,HLADR-high Endothelial cells,-0.017241379
+CD16+ CD4+ T-cells,HLADR-high Hepatocytes,-0.068965517
+CD16+ CD4+ T-cells,Hepatocytes,0.344827586
+CD16+ CD4+ T-cells,Intermediate monocytes,0
+CD16+ CD4+ T-cells,Ki67-high Cholangiocytes,0
+CD16+ CD4+ T-cells,Ki67-high Endothelial cells,0
+CD16+ CD4+ T-cells,Ki67-high Hepatocytes,0.034482759
+CD16+ CD4+ T-cells,M1 macrophages,-0.051724138
+CD16+ CD4+ T-cells,M2 macrophages,0.017241379
+CD16+ CD4+ T-cells,Naive CD4+ T-cells,-0.017241379
+CD16+ CD4+ T-cells,Neutrophils,-0.017241379
+CD16+ CD4+ T-cells,Non-classical monocytes,0
+CD16+ CD4+ T-cells,PD1+ B cells,-0.017241379
+CD16+ CD4+ T-cells,PD1+ CD4+ T-cells,0
+CD16+ CD4+ T-cells,PD1+ CD8+ T-cells,0
+CD16+ CD4+ T-cells,PD1+CD28+ CD8+ T-cells,-0.017241379
+CD16+ CD4+ T-cells,Plasma cells,0
+CD16+ CD4+ T-cells,Proliferating B cells,0
+CD16+ CD4+ T-cells,Proliferating CD4+ T-cells,0
+CD16+ CD4+ T-cells,Proliferating CD8+ T-cells,-0.017241379
+CD16+ CD4+ T-cells,Proliferating M1 macrophages,0
+CD16+ CD4+ T-cells,Proliferating M2 macrophages,0
+CD16+ CD4+ T-cells,Resident memory CD4+ T-cells,0.172413793
+CD16+ M1 macrophages,CD16+ M1 macrophages,0.172413793
+CD16+ M1 macrophages,CD16+ M2 macrophages,0.25862069
+CD16+ M1 macrophages,CD3+ CD4+ T-cells,-0.051724138
+CD16+ M1 macrophages,CD3+ CD8+ T-cells,0.017241379
+CD16+ M1 macrophages,Cholangiocytes,-0.086206897
+CD16+ M1 macrophages,Classical monocytes,-0.017241379
+CD16+ M1 macrophages,Cytotoxic T-cells,0
+CD16+ M1 macrophages,Endothelial cells,-0.034482759
+CD16+ M1 macrophages,HLADR+ CD4+ Tregs,0
+CD16+ M1 macrophages,HLADR+ M2 macrophages,0
+CD16+ M1 macrophages,HLADR- CD4+ Tregs,0.017241379
+CD16+ M1 macrophages,HLADR-high Cholangiocytes,0
+CD16+ M1 macrophages,HLADR-high Endothelial cells,0
+CD16+ M1 macrophages,HLADR-high Hepatocytes,0.068965517
+CD16+ M1 macrophages,Hepatocytes,0
+CD16+ M1 macrophages,Intermediate monocytes,0.017241379
+CD16+ M1 macrophages,Ki67-high Cholangiocytes,0
+CD16+ M1 macrophages,Ki67-high Endothelial cells,0
+CD16+ M1 macrophages,Ki67-high Hepatocytes,-0.017241379
+CD16+ M1 macrophages,M1 macrophages,0.155172414
+CD16+ M1 macrophages,M2 macrophages,0.034482759
+CD16+ M1 macrophages,Naive CD4+ T-cells,-0.017241379
+CD16+ M1 macrophages,Neutrophils,0.051724138
+CD16+ M1 macrophages,Non-classical monocytes,0.017241379
+CD16+ M1 macrophages,PD1+ B cells,-0.034482759
+CD16+ M1 macrophages,PD1+ CD4+ T-cells,-0.017241379
+CD16+ M1 macrophages,PD1+ CD8+ T-cells,0
+CD16+ M1 macrophages,PD1+CD28+ CD8+ T-cells,-0.017241379
+CD16+ M1 macrophages,Plasma cells,0.017241379
+CD16+ M1 macrophages,Proliferating B cells,0
+CD16+ M1 macrophages,Proliferating CD4+ T-cells,0
+CD16+ M1 macrophages,Proliferating CD8+ T-cells,-0.017241379
+CD16+ M1 macrophages,Proliferating M1 macrophages,0.051724138
+CD16+ M1 macrophages,Proliferating M2 macrophages,0
+CD16+ M1 macrophages,Resident memory CD4+ T-cells,-0.034482759
+CD16+ M2 macrophages,CD16+ M2 macrophages,0.672413793
+CD16+ M2 macrophages,CD3+ CD4+ T-cells,-0.206896552
+CD16+ M2 macrophages,CD3+ CD8+ T-cells,-0.310344828
+CD16+ M2 macrophages,Cholangiocytes,-0.379310345
+CD16+ M2 macrophages,Classical monocytes,-0.206896552
+CD16+ M2 macrophages,Cytotoxic T-cells,0.017241379
+CD16+ M2 macrophages,Endothelial cells,-0.448275862
+CD16+ M2 macrophages,HLADR+ CD4+ Tregs,0
+CD16+ M2 macrophages,HLADR+ M2 macrophages,0.24137931
+CD16+ M2 macrophages,HLADR- CD4+ Tregs,0.017241379
+CD16+ M2 macrophages,HLADR-high Cholangiocytes,-0.068965517
+CD16+ M2 macrophages,HLADR-high Endothelial cells,-0.155172414
+CD16+ M2 macrophages,HLADR-high Hepatocytes,-0.034482759
+CD16+ M2 macrophages,Hepatocytes,0.017241379
+CD16+ M2 macrophages,Intermediate monocytes,0.103448276
+CD16+ M2 macrophages,Ki67-high Cholangiocytes,-0.051724138
+CD16+ M2 macrophages,Ki67-high Endothelial cells,-0.034482759
+CD16+ M2 macrophages,Ki67-high Hepatocytes,-0.034482759
+CD16+ M2 macrophages,M1 macrophages,0.293103448
+CD16+ M2 macrophages,M2 macrophages,0.206896552
+CD16+ M2 macrophages,Naive CD4+ T-cells,-0.103448276
+CD16+ M2 macrophages,Neutrophils,-0.155172414
+CD16+ M2 macrophages,Non-classical monocytes,0.034482759
+CD16+ M2 macrophages,PD1+ B cells,-0.086206897
+CD16+ M2 macrophages,PD1+ CD4+ T-cells,-0.017241379
+CD16+ M2 macrophages,PD1+ CD8+ T-cells,-0.051724138
+CD16+ M2 macrophages,PD1+CD28+ CD8+ T-cells,-0.155172414
+CD16+ M2 macrophages,Plasma cells,0.103448276
+CD16+ M2 macrophages,Proliferating B cells,-0.034482759
+CD16+ M2 macrophages,Proliferating CD4+ T-cells,0
+CD16+ M2 macrophages,Proliferating CD8+ T-cells,-0.034482759
+CD16+ M2 macrophages,Proliferating M1 macrophages,0.068965517
+CD16+ M2 macrophages,Proliferating M2 macrophages,0.103448276
+CD16+ M2 macrophages,Resident memory CD4+ T-cells,0.051724138
+CD3+ CD4+ T-cells,CD3+ CD4+ T-cells,0.689655172
+CD3+ CD4+ T-cells,CD3+ CD8+ T-cells,0.75862069
+CD3+ CD4+ T-cells,Cholangiocytes,0
+CD3+ CD4+ T-cells,Classical monocytes,0.24137931
+CD3+ CD4+ T-cells,Cytotoxic T-cells,0.034482759
+CD3+ CD4+ T-cells,Endothelial cells,0.224137931
+CD3+ CD4+ T-cells,HLADR+ CD4+ Tregs,0.155172414
+CD3+ CD4+ T-cells,HLADR+ M2 macrophages,0.103448276
+CD3+ CD4+ T-cells,HLADR- CD4+ Tregs,0.103448276
+CD3+ CD4+ T-cells,HLADR-high Cholangiocytes,-0.017241379
+CD3+ CD4+ T-cells,HLADR-high Endothelial cells,0.086206897
+CD3+ CD4+ T-cells,HLADR-high Hepatocytes,0.293103448
+CD3+ CD4+ T-cells,Hepatocytes,-0.775862069
+CD3+ CD4+ T-cells,Intermediate monocytes,0
+CD3+ CD4+ T-cells,Ki67-high Cholangiocytes,0.017241379
+CD3+ CD4+ T-cells,Ki67-high Endothelial cells,0.034482759
+CD3+ CD4+ T-cells,Ki67-high Hepatocytes,0.068965517
+CD3+ CD4+ T-cells,M1 macrophages,0.24137931
+CD3+ CD4+ T-cells,M2 macrophages,0.051724138
+CD3+ CD4+ T-cells,Naive CD4+ T-cells,0.413793103
+CD3+ CD4+ T-cells,Neutrophils,-0.172413793
+CD3+ CD4+ T-cells,Non-classical monocytes,0
+CD3+ CD4+ T-cells,PD1+ B cells,0.155172414
+CD3+ CD4+ T-cells,PD1+ CD4+ T-cells,0.189655172
+CD3+ CD4+ T-cells,PD1+ CD8+ T-cells,0.137931034
+CD3+ CD4+ T-cells,PD1+CD28+ CD8+ T-cells,0.413793103
+CD3+ CD4+ T-cells,Plasma cells,-0.120689655
+CD3+ CD4+ T-cells,Proliferating B cells,0
+CD3+ CD4+ T-cells,Proliferating CD4+ T-cells,0.172413793
+CD3+ CD4+ T-cells,Proliferating CD8+ T-cells,0.206896552
+CD3+ CD4+ T-cells,Proliferating M1 macrophages,0.051724138
+CD3+ CD4+ T-cells,Proliferating M2 macrophages,0.017241379
+CD3+ CD4+ T-cells,Resident memory CD4+ T-cells,-0.137931034
+CD3+ CD8+ T-cells,CD3+ CD8+ T-cells,0.948275862
+CD3+ CD8+ T-cells,Cholangiocytes,0
+CD3+ CD8+ T-cells,Classical monocytes,0.413793103
+CD3+ CD8+ T-cells,Cytotoxic T-cells,0.310344828
+CD3+ CD8+ T-cells,Endothelial cells,0.396551724
+CD3+ CD8+ T-cells,HLADR+ CD4+ Tregs,0.24137931
+CD3+ CD8+ T-cells,HLADR+ M2 macrophages,0.24137931
+CD3+ CD8+ T-cells,HLADR- CD4+ Tregs,0.068965517
+CD3+ CD8+ T-cells,HLADR-high Cholangiocytes,0.120689655
+CD3+ CD8+ T-cells,HLADR-high Endothelial cells,0.24137931
+CD3+ CD8+ T-cells,HLADR-high Hepatocytes,0.568965517
+CD3+ CD8+ T-cells,Hepatocytes,-0.896551724
+CD3+ CD8+ T-cells,Intermediate monocytes,0.017241379
+CD3+ CD8+ T-cells,Ki67-high Cholangiocytes,0.086206897
+CD3+ CD8+ T-cells,Ki67-high Endothelial cells,0.051724138
+CD3+ CD8+ T-cells,Ki67-high Hepatocytes,-0.051724138
+CD3+ CD8+ T-cells,M1 macrophages,0.327586207
+CD3+ CD8+ T-cells,M2 macrophages,-0.017241379
+CD3+ CD8+ T-cells,Naive CD4+ T-cells,0.310344828
+CD3+ CD8+ T-cells,Neutrophils,-0.379310345
+CD3+ CD8+ T-cells,Non-classical monocytes,0.017241379
+CD3+ CD8+ T-cells,PD1+ B cells,0.206896552
+CD3+ CD8+ T-cells,PD1+ CD4+ T-cells,0.137931034
+CD3+ CD8+ T-cells,PD1+ CD8+ T-cells,0.637931034
+CD3+ CD8+ T-cells,PD1+CD28+ CD8+ T-cells,0.603448276
+CD3+ CD8+ T-cells,Plasma cells,-0.103448276
+CD3+ CD8+ T-cells,Proliferating B cells,0.103448276
+CD3+ CD8+ T-cells,Proliferating CD4+ T-cells,0.120689655
+CD3+ CD8+ T-cells,Proliferating CD8+ T-cells,0.706896552
+CD3+ CD8+ T-cells,Proliferating M1 macrophages,0.051724138
+CD3+ CD8+ T-cells,Proliferating M2 macrophages,0.051724138
+CD3+ CD8+ T-cells,Resident memory CD4+ T-cells,-0.379310345
+Cholangiocytes,Cholangiocytes,0.844827586
+Cholangiocytes,Classical monocytes,0.517241379
+Cholangiocytes,Cytotoxic T-cells,0
+Cholangiocytes,Endothelial cells,0.137931034
+Cholangiocytes,HLADR+ CD4+ Tregs,0.017241379
+Cholangiocytes,HLADR+ M2 macrophages,-0.068965517
+Cholangiocytes,HLADR- CD4+ Tregs,0.017241379
+Cholangiocytes,HLADR-high Cholangiocytes,0.637931034
+Cholangiocytes,HLADR-high Endothelial cells,0.103448276
+Cholangiocytes,HLADR-high Hepatocytes,0.155172414
+Cholangiocytes,Hepatocytes,-0.724137931
+Cholangiocytes,Intermediate monocytes,0
+Cholangiocytes,Ki67-high Cholangiocytes,0.482758621
+Cholangiocytes,Ki67-high Endothelial cells,0.017241379
+Cholangiocytes,Ki67-high Hepatocytes,0.068965517
+Cholangiocytes,M1 macrophages,-0.25862069
+Cholangiocytes,M2 macrophages,-0.310344828
+Cholangiocytes,Naive CD4+ T-cells,-0.051724138
+Cholangiocytes,Neutrophils,-0.396551724
+Cholangiocytes,Non-classical monocytes,0.086206897
+Cholangiocytes,PD1+ B cells,-0.086206897
+Cholangiocytes,PD1+ CD4+ T-cells,0.017241379
+Cholangiocytes,PD1+ CD8+ T-cells,-0.034482759
+Cholangiocytes,PD1+CD28+ CD8+ T-cells,-0.137931034
+Cholangiocytes,Plasma cells,-0.137931034
+Cholangiocytes,Proliferating B cells,0
+Cholangiocytes,Proliferating CD4+ T-cells,0
+Cholangiocytes,Proliferating CD8+ T-cells,0.051724138
+Cholangiocytes,Proliferating M1 macrophages,0.017241379
+Cholangiocytes,Proliferating M2 macrophages,-0.034482759
+Cholangiocytes,Resident memory CD4+ T-cells,-0.293103448
+Classical monocytes,Classical monocytes,0.655172414
+Classical monocytes,Cytotoxic T-cells,0.034482759
+Classical monocytes,Endothelial cells,0.155172414
+Classical monocytes,HLADR+ CD4+ Tregs,0
+Classical monocytes,HLADR+ M2 macrophages,0.068965517
+Classical monocytes,HLADR- CD4+ Tregs,0.068965517
+Classical monocytes,HLADR-high Cholangiocytes,0.224137931
+Classical monocytes,HLADR-high Endothelial cells,0.051724138
+Classical monocytes,HLADR-high Hepatocytes,0.275862069
+Classical monocytes,Hepatocytes,-0.620689655
+Classical monocytes,Intermediate monocytes,0.017241379
+Classical monocytes,Ki67-high Cholangiocytes,0.103448276
+Classical monocytes,Ki67-high Endothelial cells,0.051724138
+Classical monocytes,Ki67-high Hepatocytes,-0.017241379
+Classical monocytes,M1 macrophages,0.068965517
+Classical monocytes,M2 macrophages,0
+Classical monocytes,Naive CD4+ T-cells,0.051724138
+Classical monocytes,Neutrophils,-0.224137931
+Classical monocytes,Non-classical monocytes,0.103448276
+Classical monocytes,PD1+ B cells,0.017241379
+Classical monocytes,PD1+ CD4+ T-cells,0.017241379
+Classical monocytes,PD1+ CD8+ T-cells,0.120689655
+Classical monocytes,PD1+CD28+ CD8+ T-cells,0.086206897
+Classical monocytes,Plasma cells,-0.155172414
+Classical monocytes,Proliferating B cells,0.034482759
+Classical monocytes,Proliferating CD4+ T-cells,0.051724138
+Classical monocytes,Proliferating CD8+ T-cells,0.189655172
+Classical monocytes,Proliferating M1 macrophages,0.017241379
+Classical monocytes,Proliferating M2 macrophages,0.017241379
+Classical monocytes,Resident memory CD4+ T-cells,-0.172413793
+Cytotoxic T-cells,Cytotoxic T-cells,0.137931034
+Cytotoxic T-cells,Endothelial cells,0.068965517
+Cytotoxic T-cells,HLADR+ CD4+ Tregs,0
+Cytotoxic T-cells,HLADR+ M2 macrophages,0.034482759
+Cytotoxic T-cells,HLADR- CD4+ Tregs,0
+Cytotoxic T-cells,HLADR-high Cholangiocytes,0.017241379
+Cytotoxic T-cells,HLADR-high Endothelial cells,0.034482759
+Cytotoxic T-cells,HLADR-high Hepatocytes,0.120689655
+Cytotoxic T-cells,Hepatocytes,-0.362068966
+Cytotoxic T-cells,Intermediate monocytes,0
+Cytotoxic T-cells,Ki67-high Cholangiocytes,0
+Cytotoxic T-cells,Ki67-high Endothelial cells,0
+Cytotoxic T-cells,Ki67-high Hepatocytes,0.034482759
+Cytotoxic T-cells,M1 macrophages,0.068965517
+Cytotoxic T-cells,M2 macrophages,0
+Cytotoxic T-cells,Naive CD4+ T-cells,0.034482759
+Cytotoxic T-cells,Neutrophils,-0.086206897
+Cytotoxic T-cells,Non-classical monocytes,0
+Cytotoxic T-cells,PD1+ B cells,0
+Cytotoxic T-cells,PD1+ CD4+ T-cells,0
+Cytotoxic T-cells,PD1+ CD8+ T-cells,0.086206897
+Cytotoxic T-cells,PD1+CD28+ CD8+ T-cells,0.051724138
+Cytotoxic T-cells,Plasma cells,-0.017241379
+Cytotoxic T-cells,Proliferating B cells,0
+Cytotoxic T-cells,Proliferating CD4+ T-cells,0
+Cytotoxic T-cells,Proliferating CD8+ T-cells,0.103448276
+Cytotoxic T-cells,Proliferating M1 macrophages,0
+Cytotoxic T-cells,Proliferating M2 macrophages,0
+Cytotoxic T-cells,Resident memory CD4+ T-cells,-0.017241379
+Endothelial cells,Endothelial cells,0.913793103
+Endothelial cells,HLADR+ CD4+ Tregs,0.051724138
+Endothelial cells,HLADR+ M2 macrophages,-0.034482759
+Endothelial cells,HLADR- CD4+ Tregs,0.103448276
+Endothelial cells,HLADR-high Cholangiocytes,0
+Endothelial cells,HLADR-high Endothelial cells,0.706896552
+Endothelial cells,HLADR-high Hepatocytes,0.275862069
+Endothelial cells,Hepatocytes,-0.75862069
+Endothelial cells,Intermediate monocytes,0
+Endothelial cells,Ki67-high Cholangiocytes,0
+Endothelial cells,Ki67-high Endothelial cells,0.344827586
+Endothelial cells,Ki67-high Hepatocytes,-0.051724138
+Endothelial cells,M1 macrophages,-0.034482759
+Endothelial cells,M2 macrophages,-0.034482759
+Endothelial cells,Naive CD4+ T-cells,0.086206897
+Endothelial cells,Neutrophils,-0.224137931
+Endothelial cells,Non-classical monocytes,0.017241379
+Endothelial cells,PD1+ B cells,-0.051724138
+Endothelial cells,PD1+ CD4+ T-cells,0.017241379
+Endothelial cells,PD1+ CD8+ T-cells,0.206896552
+Endothelial cells,PD1+CD28+ CD8+ T-cells,0.034482759
+Endothelial cells,Plasma cells,-0.068965517
+Endothelial cells,Proliferating B cells,0.034482759
+Endothelial cells,Proliferating CD4+ T-cells,0.034482759
+Endothelial cells,Proliferating CD8+ T-cells,0.172413793
+Endothelial cells,Proliferating M1 macrophages,0.034482759
+Endothelial cells,Proliferating M2 macrophages,0
+Endothelial cells,Resident memory CD4+ T-cells,-0.310344828
+HLADR+ CD4+ Tregs,HLADR+ CD4+ Tregs,0.103448276
+HLADR+ CD4+ Tregs,HLADR+ M2 macrophages,0.034482759
+HLADR+ CD4+ Tregs,HLADR- CD4+ Tregs,0
+HLADR+ CD4+ Tregs,HLADR-high Cholangiocytes,0.051724138
+HLADR+ CD4+ Tregs,HLADR-high Endothelial cells,0.034482759
+HLADR+ CD4+ Tregs,HLADR-high Hepatocytes,0.103448276
+HLADR+ CD4+ Tregs,Hepatocytes,-0.517241379
+HLADR+ CD4+ Tregs,Intermediate monocytes,0
+HLADR+ CD4+ Tregs,Ki67-high Cholangiocytes,0
+HLADR+ CD4+ Tregs,Ki67-high Endothelial cells,0.017241379
+HLADR+ CD4+ Tregs,Ki67-high Hepatocytes,0
+HLADR+ CD4+ Tregs,M1 macrophages,0.051724138
+HLADR+ CD4+ Tregs,M2 macrophages,0
+HLADR+ CD4+ Tregs,Naive CD4+ T-cells,0.068965517
+HLADR+ CD4+ Tregs,Neutrophils,-0.086206897
+HLADR+ CD4+ Tregs,Non-classical monocytes,0
+HLADR+ CD4+ Tregs,PD1+ B cells,0.086206897
+HLADR+ CD4+ Tregs,PD1+ CD4+ T-cells,0.051724138
+HLADR+ CD4+ Tregs,PD1+ CD8+ T-cells,0.086206897
+HLADR+ CD4+ Tregs,PD1+CD28+ CD8+ T-cells,0.137931034
+HLADR+ CD4+ Tregs,Plasma cells,0
+HLADR+ CD4+ Tregs,Proliferating B cells,0.034482759
+HLADR+ CD4+ Tregs,Proliferating CD4+ T-cells,0.034482759
+HLADR+ CD4+ Tregs,Proliferating CD8+ T-cells,0.086206897
+HLADR+ CD4+ Tregs,Proliferating M1 macrophages,0
+HLADR+ CD4+ Tregs,Proliferating M2 macrophages,0.034482759
+HLADR+ CD4+ Tregs,Resident memory CD4+ T-cells,-0.034482759
+HLADR+ M2 macrophages,HLADR+ M2 macrophages,0.534482759
+HLADR+ M2 macrophages,HLADR- CD4+ Tregs,0
+HLADR+ M2 macrophages,HLADR-high Cholangiocytes,0.017241379
+HLADR+ M2 macrophages,HLADR-high Endothelial cells,0.034482759
+HLADR+ M2 macrophages,HLADR-high Hepatocytes,0.413793103
+HLADR+ M2 macrophages,Hepatocytes,-0.672413793
+HLADR+ M2 macrophages,Intermediate monocytes,0.017241379
+HLADR+ M2 macrophages,Ki67-high Cholangiocytes,0
+HLADR+ M2 macrophages,Ki67-high Endothelial cells,0.017241379
+HLADR+ M2 macrophages,Ki67-high Hepatocytes,-0.068965517
+HLADR+ M2 macrophages,M1 macrophages,0.586206897
+HLADR+ M2 macrophages,M2 macrophages,0.25862069
+HLADR+ M2 macrophages,Naive CD4+ T-cells,0
+HLADR+ M2 macrophages,Neutrophils,-0.206896552
+HLADR+ M2 macrophages,Non-classical monocytes,0
+HLADR+ M2 macrophages,PD1+ B cells,0.034482759
+HLADR+ M2 macrophages,PD1+ CD4+ T-cells,0.034482759
+HLADR+ M2 macrophages,PD1+ CD8+ T-cells,0.068965517
+HLADR+ M2 macrophages,PD1+CD28+ CD8+ T-cells,-0.017241379
+HLADR+ M2 macrophages,Plasma cells,0
+HLADR+ M2 macrophages,Proliferating B cells,0
+HLADR+ M2 macrophages,Proliferating CD4+ T-cells,0.017241379
+HLADR+ M2 macrophages,Proliferating CD8+ T-cells,0.051724138
+HLADR+ M2 macrophages,Proliferating M1 macrophages,0.137931034
+HLADR+ M2 macrophages,Proliferating M2 macrophages,0.103448276
+HLADR+ M2 macrophages,Resident memory CD4+ T-cells,-0.120689655
+HLADR- CD4+ Tregs,HLADR- CD4+ Tregs,0.017241379
+HLADR- CD4+ Tregs,HLADR-high Cholangiocytes,0
+HLADR- CD4+ Tregs,HLADR-high Endothelial cells,0
+HLADR- CD4+ Tregs,HLADR-high Hepatocytes,0
+HLADR- CD4+ Tregs,Hepatocytes,-0.293103448
+HLADR- CD4+ Tregs,Intermediate monocytes,0
+HLADR- CD4+ Tregs,Ki67-high Cholangiocytes,0
+HLADR- CD4+ Tregs,Ki67-high Endothelial cells,0.017241379
+HLADR- CD4+ Tregs,Ki67-high Hepatocytes,0
+HLADR- CD4+ Tregs,M1 macrophages,0.034482759
+HLADR- CD4+ Tregs,M2 macrophages,0
+HLADR- CD4+ Tregs,Naive CD4+ T-cells,0.017241379
+HLADR- CD4+ Tregs,Neutrophils,-0.017241379
+HLADR- CD4+ Tregs,Non-classical monocytes,0
+HLADR- CD4+ Tregs,PD1+ B cells,0
+HLADR- CD4+ Tregs,PD1+ CD4+ T-cells,0.034482759
+HLADR- CD4+ Tregs,PD1+ CD8+ T-cells,0
+HLADR- CD4+ Tregs,PD1+CD28+ CD8+ T-cells,0.034482759
+HLADR- CD4+ Tregs,Plasma cells,0
+HLADR- CD4+ Tregs,Proliferating B cells,0
+HLADR- CD4+ Tregs,Proliferating CD4+ T-cells,0.017241379
+HLADR- CD4+ Tregs,Proliferating CD8+ T-cells,0
+HLADR- CD4+ Tregs,Proliferating M1 macrophages,0
+HLADR- CD4+ Tregs,Proliferating M2 macrophages,0
+HLADR- CD4+ Tregs,Resident memory CD4+ T-cells,0
+HLADR-high Cholangiocytes,HLADR-high Cholangiocytes,0.413793103
+HLADR-high Cholangiocytes,HLADR-high Endothelial cells,0.068965517
+HLADR-high Cholangiocytes,HLADR-high Hepatocytes,0.137931034
+HLADR-high Cholangiocytes,Hepatocytes,-0.586206897
+HLADR-high Cholangiocytes,Intermediate monocytes,0
+HLADR-high Cholangiocytes,Ki67-high Cholangiocytes,0.172413793
+HLADR-high Cholangiocytes,Ki67-high Endothelial cells,0.034482759
+HLADR-high Cholangiocytes,Ki67-high Hepatocytes,0.051724138
+HLADR-high Cholangiocytes,M1 macrophages,-0.034482759
+HLADR-high Cholangiocytes,M2 macrophages,-0.017241379
+HLADR-high Cholangiocytes,Naive CD4+ T-cells,0.034482759
+HLADR-high Cholangiocytes,Neutrophils,-0.086206897
+HLADR-high Cholangiocytes,Non-classical monocytes,0
+HLADR-high Cholangiocytes,PD1+ B cells,0.017241379
+HLADR-high Cholangiocytes,PD1+ CD4+ T-cells,0.051724138
+HLADR-high Cholangiocytes,PD1+ CD8+ T-cells,0.068965517
+HLADR-high Cholangiocytes,PD1+CD28+ CD8+ T-cells,0
+HLADR-high Cholangiocytes,Plasma cells,0.068965517
+HLADR-high Cholangiocytes,Proliferating B cells,0
+HLADR-high Cholangiocytes,Proliferating CD4+ T-cells,0
+HLADR-high Cholangiocytes,Proliferating CD8+ T-cells,0.017241379
+HLADR-high Cholangiocytes,Proliferating M1 macrophages,0
+HLADR-high Cholangiocytes,Proliferating M2 macrophages,0
+HLADR-high Cholangiocytes,Resident memory CD4+ T-cells,-0.068965517
+HLADR-high Endothelial cells,HLADR-high Endothelial cells,0.568965517
+HLADR-high Endothelial cells,HLADR-high Hepatocytes,0.431034483
+HLADR-high Endothelial cells,Hepatocytes,-0.706896552
+HLADR-high Endothelial cells,Intermediate monocytes,0
+HLADR-high Endothelial cells,Ki67-high Cholangiocytes,0.034482759
+HLADR-high Endothelial cells,Ki67-high Endothelial cells,0.103448276
+HLADR-high Endothelial cells,Ki67-high Hepatocytes,0.017241379
+HLADR-high Endothelial cells,M1 macrophages,0.086206897
+HLADR-high Endothelial cells,M2 macrophages,0
+HLADR-high Endothelial cells,Naive CD4+ T-cells,0.051724138
+HLADR-high Endothelial cells,Neutrophils,-0.120689655
+HLADR-high Endothelial cells,Non-classical monocytes,0.051724138
+HLADR-high Endothelial cells,PD1+ B cells,0.068965517
+HLADR-high Endothelial cells,PD1+ CD4+ T-cells,0.034482759
+HLADR-high Endothelial cells,PD1+ CD8+ T-cells,0.103448276
+HLADR-high Endothelial cells,PD1+CD28+ CD8+ T-cells,0.120689655
+HLADR-high Endothelial cells,Plasma cells,0.068965517
+HLADR-high Endothelial cells,Proliferating B cells,0.017241379
+HLADR-high Endothelial cells,Proliferating CD4+ T-cells,0.017241379
+HLADR-high Endothelial cells,Proliferating CD8+ T-cells,0.103448276
+HLADR-high Endothelial cells,Proliferating M1 macrophages,0.017241379
+HLADR-high Endothelial cells,Proliferating M2 macrophages,0
+HLADR-high Endothelial cells,Resident memory CD4+ T-cells,-0.155172414
+HLADR-high Hepatocytes,HLADR-high Hepatocytes,0.862068966
+HLADR-high Hepatocytes,Hepatocytes,-0.896551724
+HLADR-high Hepatocytes,Intermediate monocytes,0
+HLADR-high Hepatocytes,Ki67-high Cholangiocytes,0
+HLADR-high Hepatocytes,Ki67-high Endothelial cells,0.051724138
+HLADR-high Hepatocytes,Ki67-high Hepatocytes,0.017241379
+HLADR-high Hepatocytes,M1 macrophages,0.517241379
+HLADR-high Hepatocytes,M2 macrophages,0.034482759
+HLADR-high Hepatocytes,Naive CD4+ T-cells,0.120689655
+HLADR-high Hepatocytes,Neutrophils,-0.051724138
+HLADR-high Hepatocytes,Non-classical monocytes,0.017241379
+HLADR-high Hepatocytes,PD1+ B cells,0.24137931
+HLADR-high Hepatocytes,PD1+ CD4+ T-cells,0.086206897
+HLADR-high Hepatocytes,PD1+ CD8+ T-cells,0.24137931
+HLADR-high Hepatocytes,PD1+CD28+ CD8+ T-cells,0.103448276
+HLADR-high Hepatocytes,Plasma cells,0.293103448
+HLADR-high Hepatocytes,Proliferating B cells,0.086206897
+HLADR-high Hepatocytes,Proliferating CD4+ T-cells,0.068965517
+HLADR-high Hepatocytes,Proliferating CD8+ T-cells,0.172413793
+HLADR-high Hepatocytes,Proliferating M1 macrophages,0.103448276
+HLADR-high Hepatocytes,Proliferating M2 macrophages,0
+HLADR-high Hepatocytes,Resident memory CD4+ T-cells,-0.224137931
+Hepatocytes,Hepatocytes,1
+Hepatocytes,Intermediate monocytes,0
+Hepatocytes,Ki67-high Cholangiocytes,-0.362068966
+Hepatocytes,Ki67-high Endothelial cells,-0.310344828
+Hepatocytes,Ki67-high Hepatocytes,-0.172413793
+Hepatocytes,M1 macrophages,-0.775862069
+Hepatocytes,M2 macrophages,-0.224137931
+Hepatocytes,Naive CD4+ T-cells,-0.517241379
+Hepatocytes,Neutrophils,-0.189655172
+Hepatocytes,Non-classical monocytes,-0.103448276
+Hepatocytes,PD1+ B cells,-0.413793103
+Hepatocytes,PD1+ CD4+ T-cells,-0.517241379
+Hepatocytes,PD1+ CD8+ T-cells,-0.672413793
+Hepatocytes,PD1+CD28+ CD8+ T-cells,-0.620689655
+Hepatocytes,Plasma cells,-0.155172414
+Hepatocytes,Proliferating B cells,-0.25862069
+Hepatocytes,Proliferating CD4+ T-cells,-0.293103448
+Hepatocytes,Proliferating CD8+ T-cells,-0.689655172
+Hepatocytes,Proliferating M1 macrophages,-0.362068966
+Hepatocytes,Proliferating M2 macrophages,-0.172413793
+Hepatocytes,Resident memory CD4+ T-cells,0.465517241
+Intermediate monocytes,Intermediate monocytes,0.051724138
+Intermediate monocytes,Ki67-high Cholangiocytes,0
+Intermediate monocytes,Ki67-high Endothelial cells,0
+Intermediate monocytes,Ki67-high Hepatocytes,0
+Intermediate monocytes,M1 macrophages,0.017241379
+Intermediate monocytes,M2 macrophages,0
+Intermediate monocytes,Naive CD4+ T-cells,0
+Intermediate monocytes,Neutrophils,0.017241379
+Intermediate monocytes,Non-classical monocytes,0
+Intermediate monocytes,PD1+ B cells,0
+Intermediate monocytes,PD1+ CD4+ T-cells,0
+Intermediate monocytes,PD1+ CD8+ T-cells,0
+Intermediate monocytes,PD1+CD28+ CD8+ T-cells,0
+Intermediate monocytes,Plasma cells,0
+Intermediate monocytes,Proliferating B cells,0
+Intermediate monocytes,Proliferating CD4+ T-cells,0
+Intermediate monocytes,Proliferating CD8+ T-cells,0
+Intermediate monocytes,Proliferating M1 macrophages,0
+Intermediate monocytes,Proliferating M2 macrophages,0
+Intermediate monocytes,Resident memory CD4+ T-cells,0
+Ki67-high Cholangiocytes,Ki67-high Cholangiocytes,0.155172414
+Ki67-high Cholangiocytes,Ki67-high Endothelial cells,0
+Ki67-high Cholangiocytes,Ki67-high Hepatocytes,0
+Ki67-high Cholangiocytes,M1 macrophages,-0.034482759
+Ki67-high Cholangiocytes,M2 macrophages,0.017241379
+Ki67-high Cholangiocytes,Naive CD4+ T-cells,0
+Ki67-high Cholangiocytes,Neutrophils,-0.051724138
+Ki67-high Cholangiocytes,Non-classical monocytes,0.017241379
+Ki67-high Cholangiocytes,PD1+ B cells,0.017241379
+Ki67-high Cholangiocytes,PD1+ CD4+ T-cells,0
+Ki67-high Cholangiocytes,PD1+ CD8+ T-cells,0.034482759
+Ki67-high Cholangiocytes,PD1+CD28+ CD8+ T-cells,0
+Ki67-high Cholangiocytes,Plasma cells,0
+Ki67-high Cholangiocytes,Proliferating B cells,0
+Ki67-high Cholangiocytes,Proliferating CD4+ T-cells,0
+Ki67-high Cholangiocytes,Proliferating CD8+ T-cells,0
+Ki67-high Cholangiocytes,Proliferating M1 macrophages,0
+Ki67-high Cholangiocytes,Proliferating M2 macrophages,0
+Ki67-high Cholangiocytes,Resident memory CD4+ T-cells,0
+Ki67-high Endothelial cells,Ki67-high Endothelial cells,0.086206897
+Ki67-high Endothelial cells,Ki67-high Hepatocytes,0.086206897
+Ki67-high Endothelial cells,M1 macrophages,-0.017241379
+Ki67-high Endothelial cells,M2 macrophages,0.017241379
+Ki67-high Endothelial cells,Naive CD4+ T-cells,0.017241379
+Ki67-high Endothelial cells,Neutrophils,-0.034482759
+Ki67-high Endothelial cells,Non-classical monocytes,0
+Ki67-high Endothelial cells,PD1+ B cells,0
+Ki67-high Endothelial cells,PD1+ CD4+ T-cells,0
+Ki67-high Endothelial cells,PD1+ CD8+ T-cells,0.051724138
+Ki67-high Endothelial cells,PD1+CD28+ CD8+ T-cells,0
+Ki67-high Endothelial cells,Plasma cells,0
+Ki67-high Endothelial cells,Proliferating B cells,0
+Ki67-high Endothelial cells,Proliferating CD4+ T-cells,0.017241379
+Ki67-high Endothelial cells,Proliferating CD8+ T-cells,0.103448276
+Ki67-high Endothelial cells,Proliferating M1 macrophages,0
+Ki67-high Endothelial cells,Proliferating M2 macrophages,0
+Ki67-high Endothelial cells,Resident memory CD4+ T-cells,0
+Ki67-high Hepatocytes,Ki67-high Hepatocytes,0.517241379
+Ki67-high Hepatocytes,M1 macrophages,-0.017241379
+Ki67-high Hepatocytes,M2 macrophages,0.017241379
+Ki67-high Hepatocytes,Naive CD4+ T-cells,-0.034482759
+Ki67-high Hepatocytes,Neutrophils,-0.086206897
+Ki67-high Hepatocytes,Non-classical monocytes,0
+Ki67-high Hepatocytes,PD1+ B cells,-0.017241379
+Ki67-high Hepatocytes,PD1+ CD4+ T-cells,0
+Ki67-high Hepatocytes,PD1+ CD8+ T-cells,-0.017241379
+Ki67-high Hepatocytes,PD1+CD28+ CD8+ T-cells,-0.017241379
+Ki67-high Hepatocytes,Plasma cells,0.103448276
+Ki67-high Hepatocytes,Proliferating B cells,0.034482759
+Ki67-high Hepatocytes,Proliferating CD4+ T-cells,0.068965517
+Ki67-high Hepatocytes,Proliferating CD8+ T-cells,0.155172414
+Ki67-high Hepatocytes,Proliferating M1 macrophages,0.068965517
+Ki67-high Hepatocytes,Proliferating M2 macrophages,0.017241379
+Ki67-high Hepatocytes,Resident memory CD4+ T-cells,-0.034482759
+M1 macrophages,M1 macrophages,0.879310345
+M1 macrophages,M2 macrophages,0.603448276
+M1 macrophages,Naive CD4+ T-cells,-0.017241379
+M1 macrophages,Neutrophils,-0.396551724
+M1 macrophages,Non-classical monocytes,0.051724138
+M1 macrophages,PD1+ B cells,-0.086206897
+M1 macrophages,PD1+ CD4+ T-cells,0.051724138
+M1 macrophages,PD1+ CD8+ T-cells,0
+M1 macrophages,PD1+CD28+ CD8+ T-cells,-0.137931034
+M1 macrophages,Plasma cells,0.017241379
+M1 macrophages,Proliferating B cells,-0.017241379
+M1 macrophages,Proliferating CD4+ T-cells,0.034482759
+M1 macrophages,Proliferating CD8+ T-cells,0.120689655
+M1 macrophages,Proliferating M1 macrophages,0.25862069
+M1 macrophages,Proliferating M2 macrophages,0.051724138
+M1 macrophages,Resident memory CD4+ T-cells,-0.155172414
+M2 macrophages,M2 macrophages,0.5
+M2 macrophages,Naive CD4+ T-cells,-0.034482759
+M2 macrophages,Neutrophils,-0.275862069
+M2 macrophages,Non-classical monocytes,0
+M2 macrophages,PD1+ B cells,-0.034482759
+M2 macrophages,PD1+ CD4+ T-cells,0.017241379
+M2 macrophages,PD1+ CD8+ T-cells,0
+M2 macrophages,PD1+CD28+ CD8+ T-cells,-0.017241379
+M2 macrophages,Plasma cells,-0.034482759
+M2 macrophages,Proliferating B cells,0
+M2 macrophages,Proliferating CD4+ T-cells,0.017241379
+M2 macrophages,Proliferating CD8+ T-cells,0.051724138
+M2 macrophages,Proliferating M1 macrophages,0.068965517
+M2 macrophages,Proliferating M2 macrophages,0.137931034
+M2 macrophages,Resident memory CD4+ T-cells,-0.068965517
+Naive CD4+ T-cells,Naive CD4+ T-cells,0.25862069
+Naive CD4+ T-cells,Neutrophils,-0.137931034
+Naive CD4+ T-cells,Non-classical monocytes,0
+Naive CD4+ T-cells,PD1+ B cells,0.155172414
+Naive CD4+ T-cells,PD1+ CD4+ T-cells,0.086206897
+Naive CD4+ T-cells,PD1+ CD8+ T-cells,0.068965517
+Naive CD4+ T-cells,PD1+CD28+ CD8+ T-cells,0.25862069
+Naive CD4+ T-cells,Plasma cells,-0.068965517
+Naive CD4+ T-cells,Proliferating B cells,0.034482759
+Naive CD4+ T-cells,Proliferating CD4+ T-cells,0.103448276
+Naive CD4+ T-cells,Proliferating CD8+ T-cells,0.086206897
+Naive CD4+ T-cells,Proliferating M1 macrophages,0
+Naive CD4+ T-cells,Proliferating M2 macrophages,0
+Naive CD4+ T-cells,Resident memory CD4+ T-cells,-0.068965517
+Neutrophils,Neutrophils,0.896551724
+Neutrophils,Non-classical monocytes,0
+Neutrophils,PD1+ B cells,-0.155172414
+Neutrophils,PD1+ CD4+ T-cells,-0.051724138
+Neutrophils,PD1+ CD8+ T-cells,-0.051724138
+Neutrophils,PD1+CD28+ CD8+ T-cells,-0.068965517
+Neutrophils,Plasma cells,0.017241379
+Neutrophils,Proliferating B cells,-0.051724138
+Neutrophils,Proliferating CD4+ T-cells,-0.017241379
+Neutrophils,Proliferating CD8+ T-cells,-0.155172414
+Neutrophils,Proliferating M1 macrophages,-0.051724138
+Neutrophils,Proliferating M2 macrophages,-0.017241379
+Neutrophils,Resident memory CD4+ T-cells,-0.25862069
+Non-classical monocytes,Non-classical monocytes,0.086206897
+Non-classical monocytes,PD1+ B cells,0
+Non-classical monocytes,PD1+ CD4+ T-cells,0.017241379
+Non-classical monocytes,PD1+ CD8+ T-cells,0.017241379
+Non-classical monocytes,PD1+CD28+ CD8+ T-cells,0
+Non-classical monocytes,Plasma cells,0
+Non-classical monocytes,Proliferating B cells,0
+Non-classical monocytes,Proliferating CD4+ T-cells,0.017241379
+Non-classical monocytes,Proliferating CD8+ T-cells,0.051724138
+Non-classical monocytes,Proliferating M1 macrophages,0
+Non-classical monocytes,Proliferating M2 macrophages,0
+Non-classical monocytes,Resident memory CD4+ T-cells,0
+PD1+ B cells,PD1+ B cells,0.25862069
+PD1+ B cells,PD1+ CD4+ T-cells,0.137931034
+PD1+ B cells,PD1+ CD8+ T-cells,0.189655172
+PD1+ B cells,PD1+CD28+ CD8+ T-cells,0.206896552
+PD1+ B cells,Plasma cells,-0.103448276
+PD1+ B cells,Proliferating B cells,0.155172414
+PD1+ B cells,Proliferating CD4+ T-cells,0.017241379
+PD1+ B cells,Proliferating CD8+ T-cells,0.103448276
+PD1+ B cells,Proliferating M1 macrophages,0
+PD1+ B cells,Proliferating M2 macrophages,0
+PD1+ B cells,Resident memory CD4+ T-cells,-0.068965517
+PD1+ CD4+ T-cells,PD1+ CD4+ T-cells,0.155172414
+PD1+ CD4+ T-cells,PD1+ CD8+ T-cells,0.086206897
+PD1+ CD4+ T-cells,PD1+CD28+ CD8+ T-cells,0.120689655
+PD1+ CD4+ T-cells,Plasma cells,-0.034482759
+PD1+ CD4+ T-cells,Proliferating B cells,0.034482759
+PD1+ CD4+ T-cells,Proliferating CD4+ T-cells,0.051724138
+PD1+ CD4+ T-cells,Proliferating CD8+ T-cells,0.034482759
+PD1+ CD4+ T-cells,Proliferating M1 macrophages,0.034482759
+PD1+ CD4+ T-cells,Proliferating M2 macrophages,0
+PD1+ CD4+ T-cells,Resident memory CD4+ T-cells,-0.017241379
+PD1+ CD8+ T-cells,PD1+ CD8+ T-cells,0.482758621
+PD1+ CD8+ T-cells,PD1+CD28+ CD8+ T-cells,0.25862069
+PD1+ CD8+ T-cells,Plasma cells,-0.051724138
+PD1+ CD8+ T-cells,Proliferating B cells,0.017241379
+PD1+ CD8+ T-cells,Proliferating CD4+ T-cells,0.034482759
+PD1+ CD8+ T-cells,Proliferating CD8+ T-cells,0.293103448
+PD1+ CD8+ T-cells,Proliferating M1 macrophages,0.017241379
+PD1+ CD8+ T-cells,Proliferating M2 macrophages,0.017241379
+PD1+ CD8+ T-cells,Resident memory CD4+ T-cells,-0.120689655
+PD1+CD28+ CD8+ T-cells,PD1+CD28+ CD8+ T-cells,0.431034483
+PD1+CD28+ CD8+ T-cells,Plasma cells,-0.068965517
+PD1+CD28+ CD8+ T-cells,Proliferating B cells,0.068965517
+PD1+CD28+ CD8+ T-cells,Proliferating CD4+ T-cells,0.034482759
+PD1+CD28+ CD8+ T-cells,Proliferating CD8+ T-cells,0.189655172
+PD1+CD28+ CD8+ T-cells,Proliferating M1 macrophages,0
+PD1+CD28+ CD8+ T-cells,Proliferating M2 macrophages,0.017241379
+PD1+CD28+ CD8+ T-cells,Resident memory CD4+ T-cells,-0.103448276
+Plasma cells,Plasma cells,0.620689655
+Plasma cells,Proliferating B cells,-0.017241379
+Plasma cells,Proliferating CD4+ T-cells,0
+Plasma cells,Proliferating CD8+ T-cells,-0.034482759
+Plasma cells,Proliferating M1 macrophages,0
+Plasma cells,Proliferating M2 macrophages,0
+Plasma cells,Resident memory CD4+ T-cells,0.120689655
+Proliferating B cells,Proliferating B cells,0.103448276
+Proliferating B cells,Proliferating CD4+ T-cells,0.017241379
+Proliferating B cells,Proliferating CD8+ T-cells,0.086206897
+Proliferating B cells,Proliferating M1 macrophages,0.017241379
+Proliferating B cells,Proliferating M2 macrophages,0
+Proliferating B cells,Resident memory CD4+ T-cells,0
+Proliferating CD4+ T-cells,Proliferating CD4+ T-cells,0.068965517
+Proliferating CD4+ T-cells,Proliferating CD8+ T-cells,0.086206897
+Proliferating CD4+ T-cells,Proliferating M1 macrophages,0.034482759
+Proliferating CD4+ T-cells,Proliferating M2 macrophages,0
+Proliferating CD4+ T-cells,Resident memory CD4+ T-cells,0
+Proliferating CD8+ T-cells,Proliferating CD8+ T-cells,0.465517241
+Proliferating CD8+ T-cells,Proliferating M1 macrophages,0.068965517
+Proliferating CD8+ T-cells,Proliferating M2 macrophages,0.051724138
+Proliferating CD8+ T-cells,Resident memory CD4+ T-cells,-0.103448276
+Proliferating M1 macrophages,Proliferating M1 macrophages,0.103448276
+Proliferating M1 macrophages,Proliferating M2 macrophages,0.034482759
+Proliferating M1 macrophages,Resident memory CD4+ T-cells,-0.017241379
+Proliferating M2 macrophages,Proliferating M2 macrophages,0.086206897
+Proliferating M2 macrophages,Resident memory CD4+ T-cells,0
+Resident memory CD4+ T-cells,Resident memory CD4+ T-cells,0.465517241
