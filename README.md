@@ -4,8 +4,8 @@ Code and segmented data to reproduce analysis as in the *Spatially resolved immu
 
 Data:
 - input: segmentation data needed for R analysis
-- sample_metadata.csv: clinical group data
-- masks and img: tiff files for tissue visualization
+- sample_metadata.csv: clinical group ID for each sample
+- masks and img: TIFF files for tissue visualization
 - Correlation: data needed to create correlation plots
 
 Citation:
