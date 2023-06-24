@@ -6,6 +6,7 @@ Data:
 - input: segmentation data needed for R analysis
 - sample_metadata.csv: clinical group data
 - masks and img: tiff files for tissue visualization
+- Correlation: data needed to create correlation plots
 
 Citation:
 
