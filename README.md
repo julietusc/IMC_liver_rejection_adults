@@ -7,4 +7,4 @@ Data:
 - sample_metadata.csv: clinical group ID for each sample
 - masks and img: TIFF files for tissue visualization
 - Correlation: data needed to create correlation plots
-- nCounter: data file needed to reproduce the "nCounter Transcriptomic and TCR Expression Analysis"
+- nCounter: data file needed to reproduce the "nCounter Transcriptomic and TCR Expression" analysis
