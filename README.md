@@ -1,6 +1,6 @@
 # IMC liver rejection adults
 
-Code and segmented data to reproduce analysis as in the *Spatially resolved immune exhaustion within the alloreactive microenvironment predicts liver transplant rejection* manuscript.
+Code and segmented data to reproduce analysis as in the *Spatially resolved immune exhaustion within the alloreactive microenvironment predicts liver transplant rejection* study.
 
 Citation:
 
