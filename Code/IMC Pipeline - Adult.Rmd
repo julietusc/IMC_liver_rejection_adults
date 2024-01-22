@@ -9683,6 +9683,8 @@ kruskal.test(DistToEndoCells ~ group, data=labelled_data[labelled_data$Clusters=
 
 # Demographics Data
 
+(Input files not provided for patient privacy/security reasons)
+
 ```{r}
 dem_data = read_xlsx("/users/sarahbangerth/Desktop/IMC/Adult IMC Output/Data/Final/IMC biodata.xlsx")
 head(dem_data)
@@ -9735,6 +9737,10 @@ fisher.test(table(ethnicity_data$Ethnicity, ethnicity_data$Group),simulate.p.val
 ###############
 
 dx_data = dem_data %>% subset(select=c(`Diagnosis Group`,Group))
+# Rectify 2 patient diagnosis
+dx_data[dx_data$`Diagnosis Group`=='other' & dx_data$Group=='NR',][1,]$`Diagnosis Group`='Acute Failure'
+dx_data[dx_data$`Diagnosis Group`=='Hepatocellular' & dx_data$Group=='CR',][1,]$`Diagnosis Group`='Hepatitis'
+
 fisher.test(table(dx_data$`Diagnosis Group`, dx_data$Group),simulate.p.value=TRUE)
 
 ###############
@@ -9743,6 +9749,504 @@ fisher.test(table(dx_data$`Diagnosis Group`, dx_data$Group),simulate.p.value=TRU
 
 type_data = dem_data %>% subset(select=c(`First transplant`,Group))
 fisher.test(table(type_data$`First transplant`, type_data$Group),simulate.p.value=TRUE)
+
+###############
+
+dem_data2 = read_xlsx("/users/sarahbangerth/Desktop/IMC/Adult IMC Output/Data/Final/Patient demographics.xlsx")
+head(dem_data2)
+
+dem_data2$Group = factor(dem_data2$Group, levels=c('NR','TCMR','CR'))
+
+dem_data2 %>% group_by(Group) %>% dplyr::summarize(n())
+
+####################
+## Time to biopsy ##
+####################
+
+kruskal.test(`Time from LT to Biopsy/Explant (evaluated) Days` ~ Group, data=dem_data2)
+
+#######################
+## Immunosuppression ##
+#######################
+
+dem_data2 = dem_data2 %>% dplyr::mutate(Immunosuppression = case_when(
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(`Maintenance IS 2` == 'MMF')&(`Maintenance IS 3`=='Prednisone') ~ 'Tac+MMF+Pre',
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(`Maintenance IS 2` == 'MMF')&(is.na(`Maintenance IS 3`)) ~ 'Tac+MMF',
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(is.na(`Maintenance IS 2`))&(`Maintenance IS 3` == 'Prednisone') ~ 'Tac+Pre',
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(is.na(`Maintenance IS 2`))&(is.na(`Maintenance IS 3`)) ~ 'Tac',
+  (`CNI/mTOR Maintenance IS 1` == 'N/A') ~ 'NA',
+  T ~ 'Other'
+))
+
+immuno = dem_data2 %>% subset(select=c(Immunosuppression,Group))
+fisher.test(table(immuno$Immunosuppression, immuno$Group),simulate.p.value=TRUE)
+
+immuno_plot = immuno %>% group_by(Group,Immunosuppression) %>% dplyr::summarize(total=n())
+
+ggplot(immuno_plot, aes(fill=Immunosuppression, y=total, x=Group)) + 
+    geom_bar(position="fill", stat="identity") + ylab(NULL) + xlab(NULL) + 
+    theme(axis.text=element_text(size=18),
+        axis.title=element_blank(),
+        plot.title=element_text(size = 22, hjust = 0.5),
+        plot.subtitle = element_text(size = 20, hjust = 0.5),
+        legend.title=element_blank(),
+        legend.text=element_text(size=16),
+        axis.ticks.x = element_blank(),
+        aspect.ratio=1,
+        axis.text.x = element_text(angle = 0, vjust = 0.5, hjust=0.5)) +
+   scale_y_continuous(labels = scales::percent_format(accuracy = 1)) +
+scale_fill_manual(values=c("#C0C0C0","#de77ae","#ffffbf","#74add1","#bf812d","#ae017e"))
+
+
+ggbarstats(
+  immuno, rownames(immuno), Group,
+  results.subtitle = FALSE,
+  subtitle = paste0(
+    "p = ",
+     ifelse(test$p.value < 0.001, "< 0.001", round(test$p.value, 2))), size=12) + 
+  theme(axis.text=element_text(size=18),
+        axis.title=element_blank(),
+        plot.title=element_text(size = 22, hjust = 0.5),
+        plot.subtitle = element_text(size = 20, hjust = 0.5),
+        legend.title=element_blank(),
+        legend.text=element_text(size=16),
+        axis.ticks.x = element_blank(),
+        aspect.ratio=1,
+        axis.text.x = element_text(angle = 0, vjust = 0.5, hjust=0.5)) +
+  scale_fill_manual(values=c("#C0C0C0","#de77ae","#ffffbf","#74add1","#bf812d","#ae017e"))
+
+
+ggplot(data = immuno_plot,aes(x = Group, y = total,
+                           group_by=Immunosuppression, fill=Immunosuppression)) +
+  geom_col(position = position_dodge(width = 0.8), width=0.8) +
+  theme_bw() +
+  ggtitle(NULL) + xlab("") + ylab("Patient percentage") +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=30),
+        plot.title=element_text(size = 34, hjust = 0.5),
+        # legend.position='none',
+        panel.grid = element_blank(),
+        legend.title=element_blank(),
+        legend.text=element_text(size=30),
+        aspect.ratio=1,
+        strip.text=element_text(size = 34, hjust = 0.5),
+        axis.ticks.x = element_blank(),
+        axis.text.x = element_text(angle =45, vjust = 1, hjust=1)) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1),limits=c(0,0.6)) +
+  # coord_flip() +
+  scale_fill_manual(values = c("lightgray","darkgray","black"))
+```
+
+TCMR patient subset - Cell proportion differences in Rejection Severity & Demographics
+
+(Input files not provided for patient privacy/security reasons)
+
+```{r}
+head(dem_data2)
+
+dem_data_TCMR = read_csv("/users/sarahbangerth/Desktop/IMC/Adult IMC Output/Data/Final/TCMR_Demographics.csv")
+head(dem_data_TCMR)
+
+unique(dem_data_TCMR$Patient)
+unique(labelled_data$Patient)
+
+dem_data_TCMR[!dem_data_TCMR$Patient %in% labelled_data$Patient,]
+
+labelled_data$Subcluster = sce_adult_labelled$Subcluster
+
+TCMR_demographics_data = merge(labelled_data,dem_data_TCMR,by='Patient')
+unique(TCMR_demographics_data$group)
+
+TCMR_demographics_data$Portal = TCMR_demographics_data$`Portal score`
+TCMR_demographics_data$Venous = TCMR_demographics_data$`Venous score`
+TCMR_demographics_data$BileDuct = TCMR_demographics_data$`Bile duct score`
+
+head(TCMR_demographics_data)
+
+###########################
+## Severity of rejection ##
+###########################
+
+rejection_severity = TCMR_demographics_data %>% subset(select=c(Patient,RAI,`Portal score`,`Bile duct score`,`Venous score`))
+
+rai = rejection_severity %>% group_by(RAI) %>% dplyr::summarize(total=n_distinct(Patient))
+rai$RAI = factor(rai$RAI, levels=c('4','5','6','7'))
+
+ggplot(data = rai,aes(x = RAI, y = total)) +
+  geom_col(position = position_dodge(width = 0.8), width=0.8) +
+  theme_bw() +
+  ggtitle(NULL) + xlab("RAI score") + ylab("Number of patients") +
+  theme(axis.text=element_text(size=19),
+        axis.title=element_text(size=30),
+        plot.title=element_text(size = 34, hjust = 0.5),
+        legend.position='none',
+        panel.grid = element_blank(),
+        aspect.ratio=1,
+        strip.text=element_text(size = 34, hjust = 0.5),
+        axis.ticks.x = element_blank()) +
+  scale_y_continuous(limits=c(0,25))
+
+portal = rejection_severity %>% group_by(`Portal score`) %>% dplyr::summarize(total=n_distinct(Patient))
+portal$`Portal score` = factor(portal$`Portal score`, levels=c('2','3'))
+
+ggplot(data = portal,aes(x = `Portal score`, y = total)) +
+  geom_col(position = position_dodge(width = 0.8), width=0.8) +
+  theme_bw() +
+  ggtitle(NULL) + xlab("Portal score") + ylab("Number of patients") +
+  theme(axis.text=element_text(size=19),
+        axis.title=element_text(size=30),
+        plot.title=element_text(size = 34, hjust = 0.5),
+        legend.position='none',
+        panel.grid = element_blank(),
+        aspect.ratio=1,
+        strip.text=element_text(size = 34, hjust = 0.5),
+        axis.ticks.x = element_blank())+
+  scale_y_continuous(limits=c(0,25))
+
+bile = rejection_severity %>% group_by(`Bile duct score`) %>% dplyr::summarize(total=n_distinct(Patient))
+bile$`Bile duct score` = factor(bile$`Bile duct score`, levels=c('1','2','3'))
+
+ggplot(data = bile,aes(x = `Bile duct score`, y = total)) +
+  geom_col(position = position_dodge(width = 0.8), width=0.8) +
+  theme_bw() +
+  ggtitle(NULL) + xlab("Bile duct score") + ylab("Number of patients") +
+  theme(axis.text=element_text(size=19),
+        axis.title=element_text(size=30),
+        plot.title=element_text(size = 34, hjust = 0.5),
+        legend.position='none',
+        panel.grid = element_blank(),
+        aspect.ratio=1,
+        strip.text=element_text(size = 34, hjust = 0.5),
+        axis.ticks.x = element_blank()) +
+  scale_y_continuous(limits=c(0,40))
+
+venous = rejection_severity %>% group_by(`Venous score`) %>% dplyr::summarize(total=n_distinct(Patient))
+venous$`Venous score` = factor(venous$`Venous score`, levels=c('0','1','2'))
+
+ggplot(data = venous,aes(x = `Venous score`, y = total)) +
+  geom_col(position = position_dodge(width = 0.8), width=0.8) +
+  theme_bw() +
+  ggtitle(NULL) + xlab("Venous score") + ylab("Number of patients") +
+  theme(axis.text=element_text(size=19),
+        axis.title=element_text(size=30),
+        plot.title=element_text(size = 34, hjust = 0.5),
+        legend.position='none',
+        panel.grid = element_blank(),
+        aspect.ratio=1,
+        strip.text=element_text(size = 34, hjust = 0.5),
+        axis.ticks.x = element_blank())+
+  scale_y_continuous(limits=c(0,20))
+
+################
+# METACLUSTERS #
+################
+
+# RAI
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('RAI','Patient')) %>% group_by(RAI,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(RAI) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','RAI','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ RAI, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+# Portal score
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('Portal','Patient')) %>% group_by(Portal,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(Portal) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','Portal','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ Portal, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+# Bile duct score
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('BileDuct','Patient')) %>% group_by(`BileDuct`,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(`BileDuct`) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','BileDuct','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ BileDuct, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+# Venous score
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('Venous','Patient')) %>% group_by(Venous,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(Venous) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','Venous','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ Venous, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+#########################################################
+# DISTANCE TO ENDOTHELIAL CELLS BY RAI AND PORTAL SCORE #
+#########################################################
+
+sce_adult_labelled$RAI = TCMR_demographics_data$RAI[match(sce_adult_labelled$Patient, TCMR_demographics_data$Patient)]
+unique(sce_adult_labelled[,is.na(sce_adult_labelled$RAI)]$Patient)
+unique(sce_adult_labelled$RAI)
+
+sce_adult_labelled$Portal = TCMR_demographics_data$Portal[match(sce_adult_labelled$Patient, TCMR_demographics_data$Patient)]
+unique(sce_adult_labelled[,is.na(sce_adult_labelled$Portal)]$Patient)
+unique(sce_adult_labelled$Portal)
+
+sce_adult_labelled_TCMR = sce_adult_labelled[,sce_adult_labelled$group=='TCMR']
+
+sce_adult_labelled_TCMR = minDistToCells(sce_adult_labelled_TCMR,
+               x_cells = (sce_adult_labelled_TCMR$Clusters=='Endothelial cells'),
+               img_id = 'sample_id')
+
+unique(sce_adult_labelled_TCMR$Patient)
+
+# RAI
+
+unique(sce_adult_labelled_TCMR$RAI)
+
+sce_adult_labelled_TCMR$RAI = factor(sce_adult_labelled_TCMR$RAI,
+                                        levels=c('4','5','6','7'))
+
+library(ggridges)
+ggplot(as.data.frame(colData(sce_adult_labelled_TCMR))) + 
+    geom_density_ridges(aes(distToCells, Subcluster, fill = RAI), alpha=0.7) +
+    geom_vline(xintercept = 0, color = "black", linewidth = 1.5) +
+  xlab('Distance to Endothelial Cells') +
+  theme_bw() +
+  scale_x_continuous(limits=c(-50,150)) +
+  scale_fill_manual(values = c("#E0B0FF","#DA70D6","#800080","black"))
+
+# Portal score
+
+unique(sce_adult_labelled_TCMR$Portal)
+
+sce_adult_labelled_TCMR$Portal = factor(sce_adult_labelled_TCMR$Portal,
+                                        levels=c('2','3'))
+
+library(ggridges)
+ggplot(as.data.frame(colData(sce_adult_labelled_TCMR))) + 
+    geom_density_ridges(aes(distToCells, Subcluster, fill = Portal), alpha=0.7) +
+    geom_vline(xintercept = 0, color = "black", linewidth = 1.5) +
+  xlab('Distance to Endothelial Cells') +
+  theme_bw() +
+  scale_x_continuous(limits=c(-50,150)) +
+  scale_fill_manual(values = c("#E0B0FF","#DA70D6","#800080"))
+
+
+
+################
+# DEMOGRAPHICS #
+################
+
+# Sex
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('Sex','Patient')) %>% group_by(Sex,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(Sex) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','Sex','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ Sex, data = cells_Patient, method='wilcox.test', group.by='Clusters')
+
+sex_proportions = cells_Patient %>% group_by(Sex,Clusters) %>% 
+  dplyr::summarize(median=median(Perc_CellType_Patient),
+                   qs = quantile(Perc_CellType_Patient, c(0.25, 0.75)),
+                   prob = c(0.25, 0.75))
+
+cells_Patient %>% group_by(Sex) %>% 
+  dplyr::summarize(tot = n())
+
+# Race/Ethnicity
+
+TCMR_demographics_data = TCMR_demographics_data %>% dplyr::mutate(Race_Ethnicity = case_when(
+  Ethnicity == 'hispanic' ~ 'Hispanic',
+  T ~ Race
+))
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('Race_Ethnicity','Patient')) %>% group_by(Race_Ethnicity,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(Race_Ethnicity) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','Race_Ethnicity','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+unique(cells_Patient$Race_Ethnicity)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ Race_Ethnicity, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+
+race_proportions = cells_Patient %>% group_by(Race_Ethnicity,Clusters) %>% 
+  dplyr::summarize(median=median(Perc_CellType_Patient),
+                   qs = quantile(Perc_CellType_Patient, c(0.25, 0.75)),
+                   prob = c(0.25, 0.75))
+
+
+cells_Patient %>% group_by(Race_Ethnicity) %>% 
+  dplyr::summarize(tot = n())
+
+# Etiology
+
+TCMR_demographics_data$Etiology = TCMR_demographics_data$`Diagnosis Group`
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('Etiology','Patient')) %>% 
+  group_by(Etiology,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(Etiology) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','Etiology','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ Etiology, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+cells_Patient %>% group_by(Etiology) %>% 
+  dplyr::summarize(tot = n())
+
+etiology_proportions = cells_Patient %>% group_by(Etiology,Clusters) %>% 
+  dplyr::summarize(median=median(Perc_CellType_Patient),
+                   qs = quantile(Perc_CellType_Patient, c(0.25, 0.75)),
+                   prob = c(0.25, 0.75))
+
+unique(TCMR_demographics_data$Patient)
+
+TCMR_demographics_data %>% group_by(Etiology) %>% dplyr::summarize(tot=n_distinct(Patient))
+
+#####################
+# IMMUNOSUPRESSION  #
+#####################
+
+head(TCMR_demographics_data)
+
+TCMR_demographics_data = TCMR_demographics_data %>% dplyr::mutate(Immunosuppression = case_when(
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(`Maintenance IS 2` == 'MMF')&(`Maintenance IS 3`=='Prednisone') ~ 'Tac+MMF+Pre',
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(`Maintenance IS 2` == 'MMF')&(is.na(`Maintenance IS 3`)) ~ 'Tac+MMF',
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(is.na(`Maintenance IS 2`))&(`Maintenance IS 3` == 'Prednisone') ~ 'Tac+Pre',
+  (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(is.na(`Maintenance IS 2`))&(is.na(`Maintenance IS 3`)) ~ 'Tac',
+  (`CNI/mTOR Maintenance IS 1` == 'N/A') ~ 'NA',
+  T ~ 'Other'
+))
+
+unique(TCMR_demographics_data$Immunosuppression)
+
+TCMR_demographics_data %>% group_by(Immunosuppression) %>% dplyr::summarize(total=n_distinct(Patient))
+
+TCMR_demographics_data = TCMR_demographics_data[TCMR_demographics_data$Immunosuppression!='NA',]
+
+TCMR_demographics_data %>% group_by(Immunosuppression) %>% dplyr::summarize(total=n_distinct(Patient))
+
+cells_per_Patient = TCMR_demographics_data %>% subset(select=c('Immunosuppression','Patient')) %>% group_by(Immunosuppression,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_demographics_data %>% group_by(Immunosuppression) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','Immunosuppression','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+unique(cells_Patient$Immunosuppression)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ Immunosuppression, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+
+is_proportions = cells_Patient %>% group_by(Immunosuppression,Clusters) %>% 
+  dplyr::summarize(median=median(Perc_CellType_Patient),
+                   qs = quantile(Perc_CellType_Patient, c(0.25, 0.75)),
+                   prob = c(0.25, 0.75))
+
+############################
+# EARLY vs LATE REJECTION  #
+############################
+
+rejection_data = read_excel("Data/Final/IMC biodata_TCMR_IS.xlsx")
+
+rejection_data[rejection_data$Patient %in% labelled_data$Patient,]
+
+head(rejection_data)
+
+rejection_data = rejection_data %>% dplyr::mutate(Rejection = case_when(
+  `Time to rejection analyzed` <= 183 ~ 'Early',
+  `Time to rejection analyzed` > 183 ~ 'Late'))
+
+unique(rejection_data$Rejection)
+
+TCMR_rejection_data = merge(labelled_data,rejection_data,by='Patient')
+unique(TCMR_rejection_data$group)
+
+TCMR_rejection_data %>% group_by(Rejection) %>% dplyr::summarize(total=n_distinct(Patient))
+
+cells_per_Patient = TCMR_rejection_data %>% subset(select=c('Rejection','Patient')) %>% group_by(Rejection,Patient) %>% 
+  dplyr::summarise(n = n())
+
+cellType_per_Patient = TCMR_rejection_data %>% group_by(Rejection) %>% subset(select=c('Patient','Clusters')) %>%
+  group_by(Patient,Clusters) %>% dplyr::summarise(n = n())
+
+cells_Patient = merge(cells_per_Patient, cellType_per_Patient, all.x=TRUE, by='Patient')
+head(cells_Patient)
+colnames(cells_Patient) = c('Patient','Rejection','CellTotal','Clusters','Count')
+cells_Patient$Perc_CellType_Patient = cells_Patient$Count / cells_Patient$CellTotal
+head(cells_Patient)
+
+unique(cells_Patient$Rejection)
+
+shapiro.test((cells_Patient)$Perc_CellType_Patient) # Reject Ho, data is non-normal - use non-parametric test
+compare_means(Perc_CellType_Patient ~ Rejection, data = cells_Patient, method='kruskal.test', group.by='Clusters')
+
+
+is_proportions = cells_Patient %>% group_by(Rejection,Clusters) %>% 
+  dplyr::summarize(median=median(Perc_CellType_Patient),
+                   qs = quantile(Perc_CellType_Patient, c(0.25, 0.75)),
+                   prob = c(0.25, 0.75))
 ```
 
 # PREDICTIVE MODELING   
