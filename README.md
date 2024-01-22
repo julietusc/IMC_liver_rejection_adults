@@ -9,4 +9,4 @@ Data:
 - Correlation: data needed to create correlation plots
 - nCounter: data file needed to reproduce the "nCounter Transcriptomic and TCR Expression" analysis
 
-![image](https://github.com/julietusc/IMC_liver_rejection_adults/assets/75763586/458b0880-eefb-414e-ba1f-58cf4859a77a)
+DOI: 10.5281/zenodo.10552912
