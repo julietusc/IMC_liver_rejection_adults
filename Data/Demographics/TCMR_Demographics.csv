@@ -1,0 +1,42 @@
+﻿Patient,Age at tx,Sex,Race,Ethnicity ,Diagnosis,Diagnosis Group,RAI,Severety ,Tx  date,Portal score,Bile duct score,Venous score ,First transplant,CNI/mTOR Maintenance IS 1,Maintenance IS 2,Maintenance IS 3
+SP21_2461,37.82,F,white,non hispanic,A1AT deficency/Etoh,other,6,moderate,3/16/21,2,2,2,DDLT,Tacro,MMF,
+SP21_2495,66.07,M,white,non hispanic,ALD/Chirrosis,Hepatocellular,5,moderate,2/24/21,3,2,0,DDLT,Tacro,MMF,Prednisone
+SP20_3668,63.56,M,other,non hispanic,ALD,Hepatocellular,5,moderate,8/13/18,2,2,1,DDLT,Tacro,MMF,
+SP20_7880,55.29,M,white,non hispanic,HCV-HCC,Malignancy,5,moderate,8/25/20,3,1,1,DDLT,Tacro,MMF,
+SP20_3382A1,54.44,F,white,non hispanic,ALD,Hepatocellular,6,severe,1/25/20,3,2,1,DDLT,Tacro,,
+SP19_13381A1,60.84,F,white,hispanic ,NASH ,Hepatocellular,5,moderate,3/12/19,2,2,1,DDLT,Tacro,MMF,Prednisone
+SP21_301,9.55,M,white,hispanic ,AIH,Hepatocellular,5,moderate,1/1/04,3,2,0,DDLT,Tacro,MMF,Prednisone
+SP21_3546,52.27,F,other,hispanic ,NASH ,Hepatocellular,5,moderate,8/18/20,2,2,1,DDLT,Tacro,MMF,Prednisone
+SP20_4548,70.43,M,other,non hispanic,NASH ,Hepatocellular,5,moderate,5/17/20,2,3,0,DDLT,Tacro,,Prednisone
+SP21_2168,70.43,M,other,non hispanic,NASH,Hepatocellular,4,moderate,5/17/20,2,2,0,DDLT,Tacro,MMF,Prednisone
+SP20_928,52.54,M,white,hispanic ,ALD,Hepatocellular,5,moderate,6/26/06,2,2,1,DDLT,Tacro,MMF,
+SP20_7572,68.44,F,white,hispanic ,NASH ,Hepatocellular,5,moderate,11/26/18,3,2,0,DDLT,Tacro,,
+SP19_1892,67.78,F,white,non hispanic,ALD ,Hepatocellular,5,moderate,11/7/16,3,1,1,DDLT,Tacro,,Prednisone
+SP19_1715A1,67.78,F,white,non hispanic,ALD,Hepatocellular,6,moderate,11/7/16,3,2,1,DDLT,Tacro,MMF,
+SP20_6708,25.72,M,white,non hispanic,ALD,Hepatocellular,5,moderate,1/4/18,2,2,1,DDLT,Tacro,,
+SP20_3128,67.08,F,white,hispanic ,ALD,Hepatocellular,5,moderate,10/26/19,3,2,1,DDLT,Tacro,,Prednisone
+SP21_1610,37.26,F,other,hispanic ,ALD-HCC,Malignancy,6,moderate,1/23/15,3,2,1,DDLT,Cyclosporine,MMF,Prednisone
+SP18_3825A1,54.75,F,asian,non hispanic,Cryptogenic cirrhosis-HCC,Malignancy,6,moderate,3/13/18,3,2,1,DDLT,Cyclosporine,MMF,
+SP19_13300,48.67,M,white,non hispanic,PSC,Chronic Cholestatic,5,moderate,5/18/18,2,2,1,DDLT,Tacro,,
+SP21_2829,42.21,F,white,non hispanic,ALD-HCC,Malignancy,4,moderate,3/5/21,2,2,0,DDLT,Tacro,MMF,Prednisone
+SP19_10445,59.55,M,white,non hispanic,HCV-HCC,Malignancy,5,moderate,7/15/19,2,2,1,DDLT,Tacro,MMF,Prednisone
+SP20_2886,61.12,F,white,hispanic ,NASH ,Hepatocellular,5,moderate,2/27/20,2,2,1,DDLT,Tacro,MMF,Prednisone
+SP21_1320,18.41,F,white,non hispanic,Wilson Disease,other,5,moderate,8/1/07,3,2,0,DDLT,Cyclosporine,MMF,Prednisone
+SP21_712,61.31,F,other,hispanic ,NASH,Hepatocellular,4,moderate,11/19/20,2,2,0,DDLT,Tacro,MMF,Prednisone
+SP19_9797,68.39,F,asian,non hispanic,Cryptogenic cirrhosis-HCC,Malignancy,7,moderate,2/27/17,3,2,2,DDLT,Tacro,MMF,
+SP_18_14559,53.85,M,white,non hispanic,NASH,Hepatocellular,7,severe,11/2/14,2,2,2,LDLT,Sirolimus,,Prednisone
+SP21_2603,35.03,M,other,hispanic ,ALD/Cirrhosis,Hepatocellular,6,moderate,12/21/16,3,2,1,DDLT,Tacro,MMF,
+SP19_12144,64.8,F,other,hispanic ,ALD,Hepatocellular,6,moderate,10/18/19,2,2,0,DDLT,Tacro,MMF,
+SP19_8069,63.93,F,other,hispanic ,HCV,Hepatitis,5,moderate,9/21/16,2,2,1,DDLT,Tacro,,Fludrocortisone
+SP21_6623,63.18,M,white,hispanic ,ALD-HCC,Malignancy,6,moderate,4/1/18,2,2,2,DDLT,Tacro,MMF,
+SP18_2369A1,36.9,M,other,hispanic ,ALD ,Hepatocellular,7,severe,1/18/13,3,2,2,DDLT,N/A,,
+SP16_1902,66.23,F,other,hispanic ,NASH ,Hepatocellular,7,severe,3/8/14,3,2,2,DDLT,Tacro,,
+SP21_1931,35.52,M,white,non hispanic,AIH,Hepatocellular,5,moderate,3/31/20,3,2,0,DDLT,Tacro,,Prednisone
+SP19_2006,44.81,M,white,non hispanic,ALD ,Hepatocellular,5,moderate,8/20/15,2,2,1,DDLT,Tacro,,Prednisone
+SP21_1786,71.65,F,asian,non hispanic,HCV-HCC,Malignancy,5,moderate,2/20/19,2,2,0,DDLT,Tacro,,Prednisone
+SP20_3601,56.52,F,white,hispanic ,AIH,Hepatocellular,7,severe,9/8/17,3,2,2,DDLT,Tacro,MMF,
+SP21_336,61.63,M,other,non hispanic,PBC,Chronic Cholestatic,4,moderate,12/11/20,2,2,0,DDLT,Tacro,MMF,Prednisone
+SP21_414_A1,40.96,F,other,hispanic ,ALD,Hepatocellular,5,moderate,10/30/20,3,2,0,DDLT,Tacro,MMF,
+SP21_725,40.96,F,other,hispanic ,ALD,Hepatocellular,5,moderate,10/30/20,3,2,0,DDLT,Tacro,MMF,Prednisone
+SP21_3775,45.16,M,asian,non hispanic,HBV,Hepatitis,5,moderate,11/9/18,2,2,1,DDLT,Tacro,MMF,Prednisone
+SP20_7546,54.81,F,asian,non hispanic,HBV,Hepatitis,6,moderate,7/18/20,3,2,1,DDLT,Cyclosporine,MMF,
