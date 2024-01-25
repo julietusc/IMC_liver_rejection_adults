@@ -9683,10 +9683,8 @@ kruskal.test(DistToEndoCells ~ group, data=labelled_data[labelled_data$Clusters=
 
 # Demographics Data
 
-(Input files not provided for patient privacy/security reasons)
-
 ```{r}
-dem_data = read_xlsx("/users/sarahbangerth/Desktop/IMC/Adult IMC Output/Data/Final/IMC biodata.xlsx")
+dem_data = read_xlsx("/users/sarahbangerth/Desktop/IMC/Adult IMC Output/Data/Final/Patient demographics.xlsx")
 head(dem_data)
 
 dem_data$Group = factor(dem_data$Group, levels=c('NR','TCMR','CR'))
@@ -9747,29 +9745,20 @@ fisher.test(table(dx_data$`Diagnosis Group`, dx_data$Group),simulate.p.value=TRU
 ## DDLT/LDLT ##
 ###############
 
-type_data = dem_data %>% subset(select=c(`First transplant`,Group))
-fisher.test(table(type_data$`First transplant`, type_data$Group),simulate.p.value=TRUE)
-
-###############
-
-dem_data2 = read_xlsx("/users/sarahbangerth/Desktop/IMC/Adult IMC Output/Data/Final/Patient demographics.xlsx")
-head(dem_data2)
-
-dem_data2$Group = factor(dem_data2$Group, levels=c('NR','TCMR','CR'))
-
-dem_data2 %>% group_by(Group) %>% dplyr::summarize(n())
+type_data = dem_data %>% subset(select=c(`First LT`,Group))
+fisher.test(table(type_data$`First LT`, type_data$Group),simulate.p.value=TRUE)
 
 ####################
 ## Time to biopsy ##
 ####################
 
-kruskal.test(`Time from LT to Biopsy/Explant (evaluated) Days` ~ Group, data=dem_data2)
+kruskal.test(`Time from LT to Biopsy/Explant (evaluated) Days` ~ Group, data=dem_data)
 
 #######################
 ## Immunosuppression ##
 #######################
 
-dem_data2 = dem_data2 %>% dplyr::mutate(Immunosuppression = case_when(
+dem_data = dem_data %>% dplyr::mutate(Immunosuppression = case_when(
   (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(`Maintenance IS 2` == 'MMF')&(`Maintenance IS 3`=='Prednisone') ~ 'Tac+MMF+Pre',
   (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(`Maintenance IS 2` == 'MMF')&(is.na(`Maintenance IS 3`)) ~ 'Tac+MMF',
   (`CNI/mTOR Maintenance IS 1` == 'Tacro')&(is.na(`Maintenance IS 2`))&(`Maintenance IS 3` == 'Prednisone') ~ 'Tac+Pre',
@@ -9778,7 +9767,7 @@ dem_data2 = dem_data2 %>% dplyr::mutate(Immunosuppression = case_when(
   T ~ 'Other'
 ))
 
-immuno = dem_data2 %>% subset(select=c(Immunosuppression,Group))
+immuno = dem_data %>% subset(select=c(Immunosuppression,Group))
 fisher.test(table(immuno$Immunosuppression, immuno$Group),simulate.p.value=TRUE)
 
 immuno_plot = immuno %>% group_by(Group,Immunosuppression) %>% dplyr::summarize(total=n())
@@ -9839,11 +9828,7 @@ ggplot(data = immuno_plot,aes(x = Group, y = total,
 
 TCMR patient subset - Cell proportion differences in Rejection Severity & Demographics
 
-(Input files not provided for patient privacy/security reasons)
-
 ```{r}
-head(dem_data2)
-
 dem_data_TCMR = read_csv("/users/sarahbangerth/Desktop/IMC/Adult IMC Output/Data/Final/TCMR_Demographics.csv")
 head(dem_data_TCMR)
 
