@@ -2,6 +2,8 @@
 
 Code and segmented data to reproduce analysis as in the *Spatially resolved immune exhaustion within the alloreactive microenvironment predicts liver transplant rejection* study.
 
+Arianna Barbetta et al. ,Spatially resolved immune exhaustion within the alloreactive microenvironment predicts liver transplant rejection.Sci. Adv.10,eadm8841(2024).DOI:10.1126/sciadv.adm8841
+
 Data:
 - input: segmentation data needed as input for R analysis
 - sample_metadata.csv: clinical group ID for each sample
